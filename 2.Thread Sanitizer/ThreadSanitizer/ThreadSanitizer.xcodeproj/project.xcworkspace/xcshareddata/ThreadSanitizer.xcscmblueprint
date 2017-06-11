@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2FE711EB628BBF51D0FF93F36440421E10752BBD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7AB4801C3484AF5026971B3CE4BDADF0B2758447" : 9223372036854775807,
+    "2FE711EB628BBF51D0FF93F36440421E10752BBD" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A7B90548-D181-4E7E-8989-B4A38B7821CA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7AB4801C3484AF5026971B3CE4BDADF0B2758447" : "",
+    "2FE711EB628BBF51D0FF93F36440421E10752BBD" : "iOS-10-Characteristic\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ThreadSanitizer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "2.Thread Sanitizer\/ThreadSanitizer\/ThreadSanitizer.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CainRun\/iOS-10-Characteristic.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2FE711EB628BBF51D0FF93F36440421E10752BBD"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.oschina.net\/cainLuo\/yuyouzixun.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7AB4801C3484AF5026971B3CE4BDADF0B2758447"
+    }
+  ]
+}
