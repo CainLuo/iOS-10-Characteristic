@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A43943EB1EEE3FFB00BF9A99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A43943EA1EEE3FFB00BF9A99 /* AppDelegate.m */; };
+		A43943EE1EEE3FFB00BF9A99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A43943ED1EEE3FFB00BF9A99 /* main.m */; };
+		A43943F11EEE3FFB00BF9A99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A43943F01EEE3FFB00BF9A99 /* ViewController.m */; };
+		A43943F31EEE3FFB00BF9A99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A43943F21EEE3FFB00BF9A99 /* Assets.xcassets */; };
+		A43943F61EEE3FFB00BF9A99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A43943F41EEE3FFB00BF9A99 /* Main.storyboard */; };
+		A43944011EEE3FFB00BF9A99 /* XcodeExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A43944001EEE3FFB00BF9A99 /* XcodeExtensionTests.m */; };
+		A439440C1EEE3FFB00BF9A99 /* XcodeExtensionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A439440B1EEE3FFB00BF9A99 /* XcodeExtensionUITests.m */; };
+		A43944201EEE409800BF9A99 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A439441F1EEE409800BF9A99 /* Cocoa.framework */; };
+		A43944261EEE409800BF9A99 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A43944251EEE409800BF9A99 /* SourceEditorExtension.m */; };
+		A43944291EEE409800BF9A99 /* SourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = A43944281EEE409800BF9A99 /* SourceEditorCommand.m */; };
+		A439442D1EEE409800BF9A99 /* XcodeExtensions.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A439441D1EEE409800BF9A99 /* XcodeExtensions.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A43943FD1EEE3FFB00BF9A99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A43943DE1EEE3FFB00BF9A99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A43943E51EEE3FFB00BF9A99;
+			remoteInfo = XcodeExtension;
+		};
+		A43944081EEE3FFB00BF9A99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A43943DE1EEE3FFB00BF9A99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A43943E51EEE3FFB00BF9A99;
+			remoteInfo = XcodeExtension;
+		};
+		A439442B1EEE409800BF9A99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A43943DE1EEE3FFB00BF9A99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A439441C1EEE409800BF9A99;
+			remoteInfo = XcodeExtensions;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A43944311EEE409800BF9A99 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A439442D1EEE409800BF9A99 /* XcodeExtensions.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A43943E61EEE3FFB00BF9A99 /* XcodeExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A43943E91EEE3FFB00BF9A99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A43943EA1EEE3FFB00BF9A99 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A43943ED1EEE3FFB00BF9A99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A43943EF1EEE3FFB00BF9A99 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A43943F01EEE3FFB00BF9A99 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A43943F21EEE3FFB00BF9A99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A43943F51EEE3FFB00BF9A99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A43943F71EEE3FFB00BF9A99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A43943FC1EEE3FFB00BF9A99 /* XcodeExtensionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodeExtensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A43944001EEE3FFB00BF9A99 /* XcodeExtensionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XcodeExtensionTests.m; sourceTree = "<group>"; };
+		A43944021EEE3FFB00BF9A99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A43944071EEE3FFB00BF9A99 /* XcodeExtensionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodeExtensionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A439440B1EEE3FFB00BF9A99 /* XcodeExtensionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XcodeExtensionUITests.m; sourceTree = "<group>"; };
+		A439440D1EEE3FFB00BF9A99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A439441D1EEE409800BF9A99 /* XcodeExtensions.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XcodeExtensions.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A439441F1EEE409800BF9A99 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A43944231EEE409800BF9A99 /* XcodeExtensions.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XcodeExtensions.entitlements; sourceTree = "<group>"; };
+		A43944241EEE409800BF9A99 /* SourceEditorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorExtension.h; sourceTree = "<group>"; };
+		A43944251EEE409800BF9A99 /* SourceEditorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorExtension.m; sourceTree = "<group>"; };
+		A43944271EEE409800BF9A99 /* SourceEditorCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorCommand.h; sourceTree = "<group>"; };
+		A43944281EEE409800BF9A99 /* SourceEditorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorCommand.m; sourceTree = "<group>"; };
+		A439442A1EEE409800BF9A99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A43943E31EEE3FFB00BF9A99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A43943F91EEE3FFB00BF9A99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A43944041EEE3FFB00BF9A99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A439441A1EEE409800BF9A99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A43944201EEE409800BF9A99 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A43943DD1EEE3FFB00BF9A99 = {
+			isa = PBXGroup;
+			children = (
+				A43943E81EEE3FFB00BF9A99 /* XcodeExtension */,
+				A43943FF1EEE3FFB00BF9A99 /* XcodeExtensionTests */,
+				A439440A1EEE3FFB00BF9A99 /* XcodeExtensionUITests */,
+				A43944211EEE409800BF9A99 /* XcodeExtensions */,
+				A439441E1EEE409800BF9A99 /* Frameworks */,
+				A43943E71EEE3FFB00BF9A99 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A43943E71EEE3FFB00BF9A99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A43943E61EEE3FFB00BF9A99 /* XcodeExtension.app */,
+				A43943FC1EEE3FFB00BF9A99 /* XcodeExtensionTests.xctest */,
+				A43944071EEE3FFB00BF9A99 /* XcodeExtensionUITests.xctest */,
+				A439441D1EEE409800BF9A99 /* XcodeExtensions.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A43943E81EEE3FFB00BF9A99 /* XcodeExtension */ = {
+			isa = PBXGroup;
+			children = (
+				A43943E91EEE3FFB00BF9A99 /* AppDelegate.h */,
+				A43943EA1EEE3FFB00BF9A99 /* AppDelegate.m */,
+				A43943EF1EEE3FFB00BF9A99 /* ViewController.h */,
+				A43943F01EEE3FFB00BF9A99 /* ViewController.m */,
+				A43943F21EEE3FFB00BF9A99 /* Assets.xcassets */,
+				A43943F41EEE3FFB00BF9A99 /* Main.storyboard */,
+				A43943F71EEE3FFB00BF9A99 /* Info.plist */,
+				A43943EC1EEE3FFB00BF9A99 /* Supporting Files */,
+			);
+			path = XcodeExtension;
+			sourceTree = "<group>";
+		};
+		A43943EC1EEE3FFB00BF9A99 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A43943ED1EEE3FFB00BF9A99 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A43943FF1EEE3FFB00BF9A99 /* XcodeExtensionTests */ = {
+			isa = PBXGroup;
+			children = (
+				A43944001EEE3FFB00BF9A99 /* XcodeExtensionTests.m */,
+				A43944021EEE3FFB00BF9A99 /* Info.plist */,
+			);
+			path = XcodeExtensionTests;
+			sourceTree = "<group>";
+		};
+		A439440A1EEE3FFB00BF9A99 /* XcodeExtensionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A439440B1EEE3FFB00BF9A99 /* XcodeExtensionUITests.m */,
+				A439440D1EEE3FFB00BF9A99 /* Info.plist */,
+			);
+			path = XcodeExtensionUITests;
+			sourceTree = "<group>";
+		};
+		A439441E1EEE409800BF9A99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A439441F1EEE409800BF9A99 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A43944211EEE409800BF9A99 /* XcodeExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				A43944241EEE409800BF9A99 /* SourceEditorExtension.h */,
+				A43944251EEE409800BF9A99 /* SourceEditorExtension.m */,
+				A43944271EEE409800BF9A99 /* SourceEditorCommand.h */,
+				A43944281EEE409800BF9A99 /* SourceEditorCommand.m */,
+				A439442A1EEE409800BF9A99 /* Info.plist */,
+				A43944221EEE409800BF9A99 /* Supporting Files */,
+			);
+			path = XcodeExtensions;
+			sourceTree = "<group>";
+		};
+		A43944221EEE409800BF9A99 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A43944231EEE409800BF9A99 /* XcodeExtensions.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A43943E51EEE3FFB00BF9A99 /* XcodeExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A43944101EEE3FFB00BF9A99 /* Build configuration list for PBXNativeTarget "XcodeExtension" */;
+			buildPhases = (
+				A43943E21EEE3FFB00BF9A99 /* Sources */,
+				A43943E31EEE3FFB00BF9A99 /* Frameworks */,
+				A43943E41EEE3FFB00BF9A99 /* Resources */,
+				A43944311EEE409800BF9A99 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A439442C1EEE409800BF9A99 /* PBXTargetDependency */,
+			);
+			name = XcodeExtension;
+			productName = XcodeExtension;
+			productReference = A43943E61EEE3FFB00BF9A99 /* XcodeExtension.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A43943FB1EEE3FFB00BF9A99 /* XcodeExtensionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A43944131EEE3FFB00BF9A99 /* Build configuration list for PBXNativeTarget "XcodeExtensionTests" */;
+			buildPhases = (
+				A43943F81EEE3FFB00BF9A99 /* Sources */,
+				A43943F91EEE3FFB00BF9A99 /* Frameworks */,
+				A43943FA1EEE3FFB00BF9A99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A43943FE1EEE3FFB00BF9A99 /* PBXTargetDependency */,
+			);
+			name = XcodeExtensionTests;
+			productName = XcodeExtensionTests;
+			productReference = A43943FC1EEE3FFB00BF9A99 /* XcodeExtensionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A43944061EEE3FFB00BF9A99 /* XcodeExtensionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A43944161EEE3FFB00BF9A99 /* Build configuration list for PBXNativeTarget "XcodeExtensionUITests" */;
+			buildPhases = (
+				A43944031EEE3FFB00BF9A99 /* Sources */,
+				A43944041EEE3FFB00BF9A99 /* Frameworks */,
+				A43944051EEE3FFB00BF9A99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A43944091EEE3FFB00BF9A99 /* PBXTargetDependency */,
+			);
+			name = XcodeExtensionUITests;
+			productName = XcodeExtensionUITests;
+			productReference = A43944071EEE3FFB00BF9A99 /* XcodeExtensionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A439441C1EEE409800BF9A99 /* XcodeExtensions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A439442E1EEE409800BF9A99 /* Build configuration list for PBXNativeTarget "XcodeExtensions" */;
+			buildPhases = (
+				A43944191EEE409800BF9A99 /* Sources */,
+				A439441A1EEE409800BF9A99 /* Frameworks */,
+				A439441B1EEE409800BF9A99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XcodeExtensions;
+			productName = XcodeExtensions;
+			productReference = A439441D1EEE409800BF9A99 /* XcodeExtensions.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A43943DE1EEE3FFB00BF9A99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Cain;
+				TargetAttributes = {
+					A43943E51EEE3FFB00BF9A99 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = K22U66A47Z;
+						ProvisioningStyle = Automatic;
+					};
+					A43943FB1EEE3FFB00BF9A99 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A43943E51EEE3FFB00BF9A99;
+					};
+					A43944061EEE3FFB00BF9A99 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A43943E51EEE3FFB00BF9A99;
+					};
+					A439441C1EEE409800BF9A99 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = K22U66A47Z;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A43943E11EEE3FFB00BF9A99 /* Build configuration list for PBXProject "XcodeExtension" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A43943DD1EEE3FFB00BF9A99;
+			productRefGroup = A43943E71EEE3FFB00BF9A99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A43943E51EEE3FFB00BF9A99 /* XcodeExtension */,
+				A43943FB1EEE3FFB00BF9A99 /* XcodeExtensionTests */,
+				A43944061EEE3FFB00BF9A99 /* XcodeExtensionUITests */,
+				A439441C1EEE409800BF9A99 /* XcodeExtensions */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A43943E41EEE3FFB00BF9A99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A43943F31EEE3FFB00BF9A99 /* Assets.xcassets in Resources */,
+				A43943F61EEE3FFB00BF9A99 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A43943FA1EEE3FFB00BF9A99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A43944051EEE3FFB00BF9A99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A439441B1EEE409800BF9A99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A43943E21EEE3FFB00BF9A99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A43943F11EEE3FFB00BF9A99 /* ViewController.m in Sources */,
+				A43943EE1EEE3FFB00BF9A99 /* main.m in Sources */,
+				A43943EB1EEE3FFB00BF9A99 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A43943F81EEE3FFB00BF9A99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A43944011EEE3FFB00BF9A99 /* XcodeExtensionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A43944031EEE3FFB00BF9A99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A439440C1EEE3FFB00BF9A99 /* XcodeExtensionUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A43944191EEE409800BF9A99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A43944261EEE409800BF9A99 /* SourceEditorExtension.m in Sources */,
+				A43944291EEE409800BF9A99 /* SourceEditorCommand.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A43943FE1EEE3FFB00BF9A99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A43943E51EEE3FFB00BF9A99 /* XcodeExtension */;
+			targetProxy = A43943FD1EEE3FFB00BF9A99 /* PBXContainerItemProxy */;
+		};
+		A43944091EEE3FFB00BF9A99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A43943E51EEE3FFB00BF9A99 /* XcodeExtension */;
+			targetProxy = A43944081EEE3FFB00BF9A99 /* PBXContainerItemProxy */;
+		};
+		A439442C1EEE409800BF9A99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A439441C1EEE409800BF9A99 /* XcodeExtensions */;
+			targetProxy = A439442B1EEE409800BF9A99 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A43943F41EEE3FFB00BF9A99 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A43943F51EEE3FFB00BF9A99 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A439440E1EEE3FFB00BF9A99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A439440F1EEE3FFB00BF9A99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A43944111EEE3FFB00BF9A99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = K22U66A47Z;
+				INFOPLIST_FILE = XcodeExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xcodeExtension.XcodeExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		A43944121EEE3FFB00BF9A99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = K22U66A47Z;
+				INFOPLIST_FILE = XcodeExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xcodeExtension.XcodeExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		A43944141EEE3FFB00BF9A99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = XcodeExtensionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xcodeExtension.XcodeExtensionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XcodeExtension.app/Contents/MacOS/XcodeExtension";
+			};
+			name = Debug;
+		};
+		A43944151EEE3FFB00BF9A99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = XcodeExtensionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xcodeExtension.XcodeExtensionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XcodeExtension.app/Contents/MacOS/XcodeExtension";
+			};
+			name = Release;
+		};
+		A43944171EEE3FFB00BF9A99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = XcodeExtensionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xcodeExtension.XcodeExtensionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XcodeExtension;
+			};
+			name = Debug;
+		};
+		A43944181EEE3FFB00BF9A99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = XcodeExtensionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xcodeExtension.XcodeExtensionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XcodeExtension;
+			};
+			name = Release;
+		};
+		A439442F1EEE409800BF9A99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = XcodeExtensions/XcodeExtensions.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = K22U66A47Z;
+				INFOPLIST_FILE = XcodeExtensions/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xcodeExtension.XcodeExtension.XcodeExtensions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A43944301EEE409800BF9A99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = XcodeExtensions/XcodeExtensions.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = K22U66A47Z;
+				INFOPLIST_FILE = XcodeExtensions/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xcodeExtension.XcodeExtension.XcodeExtensions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A43943E11EEE3FFB00BF9A99 /* Build configuration list for PBXProject "XcodeExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A439440E1EEE3FFB00BF9A99 /* Debug */,
+				A439440F1EEE3FFB00BF9A99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A43944101EEE3FFB00BF9A99 /* Build configuration list for PBXNativeTarget "XcodeExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A43944111EEE3FFB00BF9A99 /* Debug */,
+				A43944121EEE3FFB00BF9A99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A43944131EEE3FFB00BF9A99 /* Build configuration list for PBXNativeTarget "XcodeExtensionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A43944141EEE3FFB00BF9A99 /* Debug */,
+				A43944151EEE3FFB00BF9A99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A43944161EEE3FFB00BF9A99 /* Build configuration list for PBXNativeTarget "XcodeExtensionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A43944171EEE3FFB00BF9A99 /* Debug */,
+				A43944181EEE3FFB00BF9A99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A439442E1EEE409800BF9A99 /* Build configuration list for PBXNativeTarget "XcodeExtensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A439442F1EEE409800BF9A99 /* Debug */,
+				A43944301EEE409800BF9A99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A43943DE1EEE3FFB00BF9A99 /* Project object */;
+}
