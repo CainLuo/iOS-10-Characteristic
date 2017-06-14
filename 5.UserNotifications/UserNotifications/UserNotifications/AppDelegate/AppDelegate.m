@@ -35,8 +35,10 @@
     
     [self.window makeKeyAndVisible];
     
+    // 设置Notification的代理对象
     [UNUserNotificationCenter currentNotificationCenter].delegate = self;
     
+    // 询问用户是否同意App的消息通知
     [[UNUserNotificationCenter currentNotificationCenter] requestAuthorizationWithOptions:UNAuthorizationOptionSound | UNAuthorizationOptionAlert
                                                                         completionHandler:^(BOOL granted, NSError * _Nullable error) {
                                                                             
@@ -56,16 +58,19 @@
  */
 - (void)addCategoryWithNotification {
     
+    // 设置Notification的Action Button
     UNNotificationAction *cancel = [UNNotificationAction actionWithIdentifier:@"cancel"
                                                                         title:@"Cancel"
                                                                       options:UNNotificationActionOptionForeground];
     
+    // 设置Notification的Category
     UNNotificationCategory *category = [UNNotificationCategory categoryWithIdentifier:@"reminder"
                                                                               actions:@[cancel]
                                                                     intentIdentifiers:@[]
                                                                               options:UNNotificationCategoryOptionCustomDismissAction];
     NSSet *categorySet = [NSSet setWithObject:category];
     
+    // 设置Notification的Categories
     [[UNUserNotificationCenter currentNotificationCenter] setNotificationCategories:categorySet];
 }
 

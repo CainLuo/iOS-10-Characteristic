@@ -84,6 +84,7 @@ typedef NS_ENUM(NSInteger, NotificationType) {
             
             NSDictionary *dictionary = self.dataSource[indexPath.row];
             
+            // 删除指定Identifier的Notification
             [[UNUserNotificationCenter currentNotificationCenter] removePendingNotificationRequestsWithIdentifiers:@[dictionary[@"identifier"]]];
             
             NSLog(@"删除了%@通知", dictionary[@"identifier"]);
@@ -105,8 +106,10 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath {
  */
 - (void)createReminderNotificationWithTag:(NotificationType)tag {
     
+    // 实例化Notification Content
     UNMutableNotificationContent *notificatinoContent = [[UNMutableNotificationContent alloc] init];
     
+    // 设置Notification Content
     notificatinoContent.title = @"UserNotifications";
     notificatinoContent.sound = [UNNotificationSound defaultSound];
     notificatinoContent.categoryIdentifier = @"reminder";
@@ -128,6 +131,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath {
             
             NSURL *imageURL = [NSURL fileURLWithPath:imagePath];
             
+            // 设置一个添加了图片的Notification Attachment
             UNNotificationAttachment *attachment = [UNNotificationAttachment attachmentWithIdentifier:@"imageAttachment"
                                                                                                   URL:imageURL
                                                                                               options:nil
@@ -145,6 +149,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath {
             
             NSURL *videoURL = [NSURL fileURLWithPath:videoPath];
             
+            // 设置一个添加了视频的Notification Attachment
             UNNotificationAttachment *attachment = [UNNotificationAttachment attachmentWithIdentifier:@"videoAttachment"
                                                                                                   URL:videoURL
                                                                                               options:nil
@@ -172,14 +177,16 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath {
         
         NSLog(@"没有相同的通知");
 
-        // 设置通知的时间
+        // 设置通知的时间, 苹果爸爸限制最小是60秒提醒一次, 小于60秒都给你Crash掉
         UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:60
                                                                                                         repeats:YES];
         
+        // 创建Notification的请求
         UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:identifier
                                                                               content:notificatinoContent
                                                                               trigger:trigger];
         
+        // 添加Notification的请求
         [[UNUserNotificationCenter currentNotificationCenter] addNotificationRequest:request
                                                                withCompletionHandler:^(NSError * _Nullable error) {
                                                                    
@@ -198,6 +205,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath {
  */
 - (void)retrieveNotification:(void (^) (UNNotificationRequest *))notificationRequest {
     
+    // 获取正在添加的Notification信息
     [[UNUserNotificationCenter currentNotificationCenter] getPendingNotificationRequestsWithCompletionHandler:^(NSArray<UNNotificationRequest *> * _Nonnull requests) {
         
         dispatch_async(dispatch_get_main_queue(), ^{
