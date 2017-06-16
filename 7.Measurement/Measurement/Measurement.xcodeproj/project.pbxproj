@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A460EEF71EF2C00000D4AECF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A460EEF61EF2C00000D4AECF /* main.m */; };
+		A460EF101EF2C00000D4AECF /* MeasurementTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A460EF0F1EF2C00000D4AECF /* MeasurementTests.m */; };
+		A460EF1B1EF2C00000D4AECF /* MeasurementUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A460EF1A1EF2C00000D4AECF /* MeasurementUITests.m */; };
+		A460EF331EF2C02300D4AECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A460EF2C1EF2C02300D4AECF /* Assets.xcassets */; };
+		A460EF341EF2C02300D4AECF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A460EF2D1EF2C02300D4AECF /* LaunchScreen.storyboard */; };
+		A460EF361EF2C02300D4AECF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A460EF311EF2C02300D4AECF /* Info.plist */; };
+		A460EF3B1EF2C06A00D4AECF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A460EF3A1EF2C06A00D4AECF /* AppDelegate.m */; };
+		A460EF411EF2E54A00D4AECF /* MeasurementController.m in Sources */ = {isa = PBXBuildFile; fileRef = A460EF401EF2E54A00D4AECF /* MeasurementController.m */; };
+		A460EF441EF2E55700D4AECF /* MeasurementView.m in Sources */ = {isa = PBXBuildFile; fileRef = A460EF431EF2E55700D4AECF /* MeasurementView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A460EF0C1EF2C00000D4AECF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A460EEEA1EF2C00000D4AECF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A460EEF11EF2C00000D4AECF;
+			remoteInfo = Measurement;
+		};
+		A460EF171EF2C00000D4AECF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A460EEEA1EF2C00000D4AECF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A460EEF11EF2C00000D4AECF;
+			remoteInfo = Measurement;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A460EEF21EF2C00000D4AECF /* Measurement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Measurement.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A460EEF61EF2C00000D4AECF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A460EF0B1EF2C00000D4AECF /* MeasurementTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeasurementTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A460EF0F1EF2C00000D4AECF /* MeasurementTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeasurementTests.m; sourceTree = "<group>"; };
+		A460EF111EF2C00000D4AECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A460EF161EF2C00000D4AECF /* MeasurementUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeasurementUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A460EF1A1EF2C00000D4AECF /* MeasurementUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeasurementUITests.m; sourceTree = "<group>"; };
+		A460EF1C1EF2C00000D4AECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A460EF2C1EF2C02300D4AECF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A460EF2E1EF2C02300D4AECF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A460EF311EF2C02300D4AECF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A460EF391EF2C06A00D4AECF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A460EF3A1EF2C06A00D4AECF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A460EF3F1EF2E54A00D4AECF /* MeasurementController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeasurementController.h; sourceTree = "<group>"; };
+		A460EF401EF2E54A00D4AECF /* MeasurementController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeasurementController.m; sourceTree = "<group>"; };
+		A460EF421EF2E55700D4AECF /* MeasurementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeasurementView.h; sourceTree = "<group>"; };
+		A460EF431EF2E55700D4AECF /* MeasurementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeasurementView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A460EEEF1EF2C00000D4AECF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A460EF081EF2C00000D4AECF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A460EF131EF2C00000D4AECF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A460EEE91EF2C00000D4AECF = {
+			isa = PBXGroup;
+			children = (
+				A460EEF41EF2C00000D4AECF /* Measurement */,
+				A460EF0E1EF2C00000D4AECF /* MeasurementTests */,
+				A460EF191EF2C00000D4AECF /* MeasurementUITests */,
+				A460EEF31EF2C00000D4AECF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A460EEF31EF2C00000D4AECF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A460EEF21EF2C00000D4AECF /* Measurement.app */,
+				A460EF0B1EF2C00000D4AECF /* MeasurementTests.xctest */,
+				A460EF161EF2C00000D4AECF /* MeasurementUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A460EEF41EF2C00000D4AECF /* Measurement */ = {
+			isa = PBXGroup;
+			children = (
+				A460EF371EF2C06A00D4AECF /* Module */,
+				A460EF2B1EF2C02300D4AECF /* Resource */,
+				A460EEF51EF2C00000D4AECF /* Supporting Files */,
+			);
+			path = Measurement;
+			sourceTree = "<group>";
+		};
+		A460EEF51EF2C00000D4AECF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A460EEF61EF2C00000D4AECF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A460EF0E1EF2C00000D4AECF /* MeasurementTests */ = {
+			isa = PBXGroup;
+			children = (
+				A460EF0F1EF2C00000D4AECF /* MeasurementTests.m */,
+				A460EF111EF2C00000D4AECF /* Info.plist */,
+			);
+			path = MeasurementTests;
+			sourceTree = "<group>";
+		};
+		A460EF191EF2C00000D4AECF /* MeasurementUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A460EF1A1EF2C00000D4AECF /* MeasurementUITests.m */,
+				A460EF1C1EF2C00000D4AECF /* Info.plist */,
+			);
+			path = MeasurementUITests;
+			sourceTree = "<group>";
+		};
+		A460EF2B1EF2C02300D4AECF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A460EF2C1EF2C02300D4AECF /* Assets.xcassets */,
+				A460EF2D1EF2C02300D4AECF /* LaunchScreen.storyboard */,
+				A460EF311EF2C02300D4AECF /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A460EF371EF2C06A00D4AECF /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				A460EF381EF2C06A00D4AECF /* AppDelegate */,
+				A460EF3C1EF2E53700D4AECF /* Measurement */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		A460EF381EF2C06A00D4AECF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A460EF391EF2C06A00D4AECF /* AppDelegate.h */,
+				A460EF3A1EF2C06A00D4AECF /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		A460EF3C1EF2E53700D4AECF /* Measurement */ = {
+			isa = PBXGroup;
+			children = (
+				A460EF3D1EF2E53700D4AECF /* Controller */,
+				A460EF3E1EF2E53700D4AECF /* Views */,
+			);
+			path = Measurement;
+			sourceTree = "<group>";
+		};
+		A460EF3D1EF2E53700D4AECF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A460EF3F1EF2E54A00D4AECF /* MeasurementController.h */,
+				A460EF401EF2E54A00D4AECF /* MeasurementController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A460EF3E1EF2E53700D4AECF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A460EF421EF2E55700D4AECF /* MeasurementView.h */,
+				A460EF431EF2E55700D4AECF /* MeasurementView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A460EEF11EF2C00000D4AECF /* Measurement */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A460EF1F1EF2C00000D4AECF /* Build configuration list for PBXNativeTarget "Measurement" */;
+			buildPhases = (
+				A460EEEE1EF2C00000D4AECF /* Sources */,
+				A460EEEF1EF2C00000D4AECF /* Frameworks */,
+				A460EEF01EF2C00000D4AECF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Measurement;
+			productName = Measurement;
+			productReference = A460EEF21EF2C00000D4AECF /* Measurement.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A460EF0A1EF2C00000D4AECF /* MeasurementTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A460EF221EF2C00000D4AECF /* Build configuration list for PBXNativeTarget "MeasurementTests" */;
+			buildPhases = (
+				A460EF071EF2C00000D4AECF /* Sources */,
+				A460EF081EF2C00000D4AECF /* Frameworks */,
+				A460EF091EF2C00000D4AECF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A460EF0D1EF2C00000D4AECF /* PBXTargetDependency */,
+			);
+			name = MeasurementTests;
+			productName = MeasurementTests;
+			productReference = A460EF0B1EF2C00000D4AECF /* MeasurementTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A460EF151EF2C00000D4AECF /* MeasurementUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A460EF251EF2C00000D4AECF /* Build configuration list for PBXNativeTarget "MeasurementUITests" */;
+			buildPhases = (
+				A460EF121EF2C00000D4AECF /* Sources */,
+				A460EF131EF2C00000D4AECF /* Frameworks */,
+				A460EF141EF2C00000D4AECF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A460EF181EF2C00000D4AECF /* PBXTargetDependency */,
+			);
+			name = MeasurementUITests;
+			productName = MeasurementUITests;
+			productReference = A460EF161EF2C00000D4AECF /* MeasurementUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A460EEEA1EF2C00000D4AECF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Cain;
+				TargetAttributes = {
+					A460EEF11EF2C00000D4AECF = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					A460EF0A1EF2C00000D4AECF = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A460EEF11EF2C00000D4AECF;
+					};
+					A460EF151EF2C00000D4AECF = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A460EEF11EF2C00000D4AECF;
+					};
+				};
+			};
+			buildConfigurationList = A460EEED1EF2C00000D4AECF /* Build configuration list for PBXProject "Measurement" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A460EEE91EF2C00000D4AECF;
+			productRefGroup = A460EEF31EF2C00000D4AECF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A460EEF11EF2C00000D4AECF /* Measurement */,
+				A460EF0A1EF2C00000D4AECF /* MeasurementTests */,
+				A460EF151EF2C00000D4AECF /* MeasurementUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A460EEF01EF2C00000D4AECF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A460EF331EF2C02300D4AECF /* Assets.xcassets in Resources */,
+				A460EF341EF2C02300D4AECF /* LaunchScreen.storyboard in Resources */,
+				A460EF361EF2C02300D4AECF /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A460EF091EF2C00000D4AECF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A460EF141EF2C00000D4AECF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A460EEEE1EF2C00000D4AECF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A460EEF71EF2C00000D4AECF /* main.m in Sources */,
+				A460EF441EF2E55700D4AECF /* MeasurementView.m in Sources */,
+				A460EF3B1EF2C06A00D4AECF /* AppDelegate.m in Sources */,
+				A460EF411EF2E54A00D4AECF /* MeasurementController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A460EF071EF2C00000D4AECF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A460EF101EF2C00000D4AECF /* MeasurementTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A460EF121EF2C00000D4AECF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A460EF1B1EF2C00000D4AECF /* MeasurementUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A460EF0D1EF2C00000D4AECF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A460EEF11EF2C00000D4AECF /* Measurement */;
+			targetProxy = A460EF0C1EF2C00000D4AECF /* PBXContainerItemProxy */;
+		};
+		A460EF181EF2C00000D4AECF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A460EEF11EF2C00000D4AECF /* Measurement */;
+			targetProxy = A460EF171EF2C00000D4AECF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A460EF2D1EF2C02300D4AECF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A460EF2E1EF2C02300D4AECF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A460EF1D1EF2C00000D4AECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A460EF1E1EF2C00000D4AECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A460EF201EF2C00000D4AECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/Measurement/Resource/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.measurement.Measurement;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A460EF211EF2C00000D4AECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/Measurement/Resource/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.measurement.Measurement;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A460EF231EF2C00000D4AECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MeasurementTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.measurement.MeasurementTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Measurement.app/Measurement";
+			};
+			name = Debug;
+		};
+		A460EF241EF2C00000D4AECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MeasurementTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.measurement.MeasurementTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Measurement.app/Measurement";
+			};
+			name = Release;
+		};
+		A460EF261EF2C00000D4AECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MeasurementUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.measurement.MeasurementUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Measurement;
+			};
+			name = Debug;
+		};
+		A460EF271EF2C00000D4AECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MeasurementUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.measurement.MeasurementUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Measurement;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A460EEED1EF2C00000D4AECF /* Build configuration list for PBXProject "Measurement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A460EF1D1EF2C00000D4AECF /* Debug */,
+				A460EF1E1EF2C00000D4AECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A460EF1F1EF2C00000D4AECF /* Build configuration list for PBXNativeTarget "Measurement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A460EF201EF2C00000D4AECF /* Debug */,
+				A460EF211EF2C00000D4AECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A460EF221EF2C00000D4AECF /* Build configuration list for PBXNativeTarget "MeasurementTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A460EF231EF2C00000D4AECF /* Debug */,
+				A460EF241EF2C00000D4AECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A460EF251EF2C00000D4AECF /* Build configuration list for PBXNativeTarget "MeasurementUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A460EF261EF2C00000D4AECF /* Debug */,
+				A460EF271EF2C00000D4AECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A460EEEA1EF2C00000D4AECF /* Project object */;
+}

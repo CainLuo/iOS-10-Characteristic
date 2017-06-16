@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2FE711EB628BBF51D0FF93F36440421E10752BBD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7AB4801C3484AF5026971B3CE4BDADF0B2758447" : 9223372036854775807,
+    "2FE711EB628BBF51D0FF93F36440421E10752BBD" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7A9DA575-D063-405E-9587-25ABB580EFFE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7AB4801C3484AF5026971B3CE4BDADF0B2758447" : "",
+    "2FE711EB628BBF51D0FF93F36440421E10752BBD" : "iOS-10-Characteristic\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Measurement",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "7.Measurement\/Measurement\/Measurement.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CainRun\/iOS-10-Characteristic.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2FE711EB628BBF51D0FF93F36440421E10752BBD"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.oschina.net\/cainLuo\/yuyouzixun.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7AB4801C3484AF5026971B3CE4BDADF0B2758447"
+    }
+  ]
+}
