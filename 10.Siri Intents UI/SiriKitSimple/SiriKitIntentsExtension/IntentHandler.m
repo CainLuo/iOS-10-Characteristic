@@ -19,7 +19,7 @@
 // "<myApp> John saying hello"
 // "Search for messages in <myApp>"
 
-@interface IntentHandler () <INSendMessageIntentHandling, INSearchForMessagesIntentHandling, INSetMessageAttributeIntentHandling>
+@interface IntentHandler () <INSendMessageIntentHandling>
 
 @end
 
@@ -129,38 +129,47 @@
         } else if (matchingContacts.count == 1) {
             
             // We have exactly one matching contact
-            [resolutionResults addObject:[INPersonResolutionResult successWithResolvedPerson:recipient]];
+            [resolutionResults addObject:[INPersonResolutionResult successWithResolvedPerson:[matchingContacts firstObject]]];
         } else {
             
             // We have no contacts matching the description provided
-            [resolutionResults addObject:[INPersonResolutionResult unsupported]];
+            [resolutionResults addObject:[INPersonResolutionResult needsValue]];
         }
     }
     completion(resolutionResults);
 }
 
-- (void)resolveContentForSendMessage:(INSendMessageIntent *)intent withCompletion:(void (^)(INStringResolutionResult *resolutionResult))completion {
+- (void)resolveContentForSendMessage:(INSendMessageIntent *)intent
+                      withCompletion:(void (^)(INStringResolutionResult *resolutionResult))completion {
+    
     NSString *text = intent.content;
+    
     if (text && ![text isEqualToString:@""]) {
+        
         completion([INStringResolutionResult successWithResolvedString:text]);
     } else {
+        
         completion([INStringResolutionResult needsValue]);
     }
 }
 
 // Once resolution is completed, perform validation on the intent and provide confirmation (optional).
 
-- (void)confirmSendMessage:(INSendMessageIntent *)intent completion:(void (^)(INSendMessageIntentResponse *response))completion {
+- (void)confirmSendMessage:(INSendMessageIntent *)intent
+                completion:(void (^)(INSendMessageIntentResponse *response))completion {
     // Verify user is authenticated and your app is ready to send a message.
     
     NSUserActivity *userActivity = [[NSUserActivity alloc] initWithActivityType:NSStringFromClass([INSendMessageIntent class])];
-    INSendMessageIntentResponse *response = [[INSendMessageIntentResponse alloc] initWithCode:INSendMessageIntentResponseCodeReady userActivity:userActivity];
+    
+    INSendMessageIntentResponse *response = [[INSendMessageIntentResponse alloc] initWithCode:INSendMessageIntentResponseCodeReady
+                                                                                 userActivity:userActivity];
     completion(response);
 }
 
 // Handle the completed intent (required).
 
-- (void)handleSendMessage:(INSendMessageIntent *)intent completion:(void (^)(INSendMessageIntentResponse *response))completion {
+- (void)handleSendMessage:(INSendMessageIntent *)intent
+               completion:(void (^)(INSendMessageIntentResponse *response))completion {
     // Implement your application logic to send a message here.
     
     NSString *email = [intent.recipients lastObject].personHandle.value;
@@ -169,37 +178,8 @@
     NSLog(@"发送邮件\"%@\"给%@", content, email);
     
     NSUserActivity *userActivity = [[NSUserActivity alloc] initWithActivityType:NSStringFromClass([INSendMessageIntent class])];
-    INSendMessageIntentResponse *response = [[INSendMessageIntentResponse alloc] initWithCode:INSendMessageIntentResponseCodeSuccess userActivity:userActivity];
-    completion(response);
-}
-
-// Implement handlers for each intent you wish to handle.  As an example for messages, you may wish to also handle searchForMessages and setMessageAttributes.
-
-#pragma mark - INSearchForMessagesIntentHandling
-
-- (void)handleSearchForMessages:(INSearchForMessagesIntent *)intent completion:(void (^)(INSearchForMessagesIntentResponse *response))completion {
-    // Implement your application logic to find a message that matches the information in the intent.
-    
-    NSUserActivity *userActivity = [[NSUserActivity alloc] initWithActivityType:NSStringFromClass([INSearchForMessagesIntent class])];
-    INSearchForMessagesIntentResponse *response = [[INSearchForMessagesIntentResponse alloc] initWithCode:INSearchForMessagesIntentResponseCodeSuccess userActivity:userActivity];
-    // Initialize with found message's attributes
-    response.messages = @[[[INMessage alloc]
-        initWithIdentifier:@"identifier"
-        content:@"I am so excited about SiriKit!"
-        dateSent:[NSDate date]
-        sender:[[INPerson alloc] initWithPersonHandle:[[INPersonHandle alloc] initWithValue:@"sarah@example.com" type:INPersonHandleTypeEmailAddress] nameComponents:nil displayName:@"Sarah" image:nil contactIdentifier:nil customIdentifier:nil]
-        recipients:@[[[INPerson alloc] initWithPersonHandle:[[INPersonHandle alloc] initWithValue:@"+1-415-555-5555" type:INPersonHandleTypePhoneNumber] nameComponents:nil displayName:@"John" image:nil contactIdentifier:nil customIdentifier:nil]]
-    ]];
-    completion(response);
-}
-
-#pragma mark - INSetMessageAttributeIntentHandling
-
-- (void)handleSetMessageAttribute:(INSetMessageAttributeIntent *)intent completion:(void (^)(INSetMessageAttributeIntentResponse *response))completion {
-    // Implement your application logic to set the message attribute here.
-    
-    NSUserActivity *userActivity = [[NSUserActivity alloc] initWithActivityType:NSStringFromClass([INSetMessageAttributeIntent class])];
-    INSetMessageAttributeIntentResponse *response = [[INSetMessageAttributeIntentResponse alloc] initWithCode:INSetMessageAttributeIntentResponseCodeSuccess userActivity:userActivity];
+    INSendMessageIntentResponse *response = [[INSendMessageIntentResponse alloc] initWithCode:INSendMessageIntentResponseCodeSuccess
+                                                                                 userActivity:userActivity];
     completion(response);
 }
 

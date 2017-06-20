@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A451FF211EF8E8540092B699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4CD4FAB1EF814720029923A /* Assets.xcassets */; };
+		A451FF221EF8E8630092B699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4CD4FAB1EF814720029923A /* Assets.xcassets */; };
 		A4CD4F751EF814400029923A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CD4F741EF814400029923A /* main.m */; };
 		A4CD4F8E1EF814400029923A /* SiriKitSimpleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CD4F8D1EF814400029923A /* SiriKitSimpleTests.m */; };
 		A4CD4F991EF814400029923A /* SiriKitSimpleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CD4F981EF814400029923A /* SiriKitSimpleUITests.m */; };
@@ -479,6 +481,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A451FF221EF8E8630092B699 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +489,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A451FF211EF8E8540092B699 /* Assets.xcassets in Resources */,
 				A4CD4FD01EF818310029923A /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

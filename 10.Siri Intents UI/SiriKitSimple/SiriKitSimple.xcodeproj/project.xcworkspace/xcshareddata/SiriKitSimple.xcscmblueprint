@@ -7,14 +7,14 @@
     "7AB4801C3484AF5026971B3CE4BDADF0B2758447" : 9223372036854775807,
     "2FE711EB628BBF51D0FF93F36440421E10752BBD" : 9223372036854775807
   },
-  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F5334831-8DDF-4407-ADB7-46918A1A6A84",
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DB7FC4EB-05DE-41D9-85A5-FC575A6CBD51",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "7AB4801C3484AF5026971B3CE4BDADF0B2758447" : "",
     "2FE711EB628BBF51D0FF93F36440421E10752BBD" : "iOS-10-Characteristic\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "SiriKitSimple",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
-  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "9.Siri Intents\/SiriKitSimple\/SiriKitSimple.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "10.Siri Intents UI\/SiriKitSimple\/SiriKitSimple.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CainRun\/iOS-10-Characteristic.git",
